@@ -1,5 +1,5 @@
 import { RECEIVE_SINGLE_POKEMON } from '../actions/pokemon_actions';
-
+import { merge } from 'lodash';
 
 function itemsReducer(state = {}, action) {
   Object.freeze(state);

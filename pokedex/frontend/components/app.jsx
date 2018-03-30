@@ -4,9 +4,9 @@ import PokemonDetailContainer from './pokemon/pokemon_detail_container';
 import { Route } from 'react-router-dom';
 
 const App = () => (
-  <div>
-    <PokemonIndexContainer />
-      <PokemonDetailContainer />
+  <div className="app">
+    <Route path="/" component={PokemonIndexContainer} />
+    <Route path="/pokemon/:id" component={PokemonDetailContainer} />
   </div>
 );
 
